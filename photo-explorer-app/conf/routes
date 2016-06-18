@@ -3,7 +3,11 @@
 # ~~~~
 
 GET     /images/dog/get                 controllers.DogImageController.imageRedirect
-
 GET     /images/dog/get/raw             controllers.DogImageController.sendRawUrl
 GET     /images/dog/get/xml             controllers.DogImageController.sendXml
 GET     /images/dog/get/json            controllers.DogImageController.sendJson
+
+GET     /images/shuzo/get               controllers.ShuzoImageController.imageRedirect
+GET     /images/shuzo/get/raw           controllers.ShuzoImageController.sendRawUrl
+GET     /images/shuzo/get/xml           controllers.ShuzoImageController.sendXml
+GET     /images/shuzo/get/json          controllers.ShuzoImageController.sendJson

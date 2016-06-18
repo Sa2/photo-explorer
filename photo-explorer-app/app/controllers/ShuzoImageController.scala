@@ -3,15 +3,15 @@ package controllers
 import com.google.inject.Inject
 import play.api.libs.json.Json
 import play.api.mvc.{Action, Controller}
-import services.DogImageUrlsService
+import services.ShuzoImageUrlsService
 
 import scala.concurrent.Future
 import scala.concurrent.ExecutionContext.Implicits.global
 
 /**
-  * Created by Sa2 on 2016/06/05.
+  * Created by Sa2 on 2016/06/18.
   */
-class DogImageController @Inject()(val imageUrlsService: DogImageUrlsService) extends Controller {
+class ShuzoImageController @Inject()(val imageUrlsService: ShuzoImageUrlsService) extends Controller {
 
   def imageRedirect = Action.async { implicit rs =>
     Future {
@@ -46,4 +46,5 @@ class DogImageController @Inject()(val imageUrlsService: DogImageUrlsService) ex
       Ok(Json.obj("url" -> imageUrlsService.getRandomPicUrl()))
     }
   }
+
 }

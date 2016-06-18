@@ -9,9 +9,10 @@ import play.api.libs.json.{JsResult, Json}
 import scala.util.Random
 
 /**
-  * Created by Sa2 on 2016/06/05.
+  * Created by Sa2 on 2016/06/19.
   */
 class ImageUrlsService {
+
   def getRandomPicUrl(): String = {
     val r = new Random()
     val mediaUrl: List[String] = getMediaUrls()
@@ -28,4 +29,5 @@ class ImageUrlsService {
 
     return json
   }
+
 }
