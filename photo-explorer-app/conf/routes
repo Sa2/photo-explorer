@@ -11,3 +11,8 @@ GET     /images/shuzo/get               controllers.ShuzoImageController.imageRe
 GET     /images/shuzo/get/raw           controllers.ShuzoImageController.sendRawUrl
 GET     /images/shuzo/get/xml           controllers.ShuzoImageController.sendXml
 GET     /images/shuzo/get/json          controllers.ShuzoImageController.sendJson
+
+GET     /images/rabbit/get               controllers.RabbitImageController.imageRedirect
+GET     /images/rabbit/get/raw           controllers.RabbitImageController.sendRawUrl
+GET     /images/rabbit/get/xml           controllers.RabbitImageController.sendXml
+GET     /images/rabbit/get/json          controllers.RabbitImageController.sendJson
