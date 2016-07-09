@@ -16,3 +16,8 @@ GET     /images/rabbit/get               controllers.RabbitImageController.image
 GET     /images/rabbit/get/raw           controllers.RabbitImageController.sendRawUrl
 GET     /images/rabbit/get/xml           controllers.RabbitImageController.sendXml
 GET     /images/rabbit/get/json          controllers.RabbitImageController.sendJson
+
+GET     /images/nanasama/get               controllers.NanasamaImageController.imageRedirect
+GET     /images/nanasama/get/raw           controllers.NanasamaImageController.sendRawUrl
+GET     /images/nanasama/get/xml           controllers.NanasamaImageController.sendXml
+GET     /images/nanasama/get/json          controllers.NanasamaImageController.sendJson

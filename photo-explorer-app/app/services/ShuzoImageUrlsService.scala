@@ -10,7 +10,7 @@ import org.apache.commons.io.FileUtils
 class ShuzoImageUrlsService extends ImageUrlsService {
 
   override def openJsonFile(): String = {
-    val json = FileUtils.readFileToString( new File("../../../data-warehouse/json/shuzo-urls.json") )
+    val json = FileUtils.readFileToString( new File("../data-warehouse/json/shuzo-urls.json") )
 
     return json
   }

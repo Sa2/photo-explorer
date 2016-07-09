@@ -10,7 +10,7 @@ import org.apache.commons.io.FileUtils
 class RabbitImageUrlsService extends ImageUrlsService {
 
   override def openJsonFile(): String = {
-    val json = FileUtils.readFileToString( new File("../../../data-warehouse/json/rabbit-urls.json") )
+    val json = FileUtils.readFileToString( new File("../data-warehouse/json/rabbit-urls.json") )
 
     return json
   }
