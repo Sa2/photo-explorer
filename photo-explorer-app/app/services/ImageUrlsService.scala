@@ -16,18 +16,16 @@ class ImageUrlsService {
   def getRandomPicUrl(): String = {
     val r = new Random()
     val mediaUrl: List[String] = getMediaUrls()
-    return r.shuffle(mediaUrl).head
+    r.shuffle(mediaUrl).head
   }
 
   def getMediaUrls(): List[String] = {
     val mediaUrls: JsResult[MediaUrl] = Json.parse(openJsonFile()).validate[MediaUrl]
-    return mediaUrls.get.mediaUrl
+    mediaUrls.get.mediaUrl
   }
 
   def openJsonFile(): String = {
-    val json = FileUtils.readFileToString( new File("../data-warehouse/json/dog-urls.json") )
-
-    return json
+    FileUtils.readFileToString( new File("../data-warehouse/json/dog-urls.json")
   }
 
 }

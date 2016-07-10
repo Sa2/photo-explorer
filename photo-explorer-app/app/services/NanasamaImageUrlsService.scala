@@ -9,9 +9,6 @@ import org.apache.commons.io.FileUtils
   */
 class NanasamaImageUrlsService extends ImageUrlsService {
 
-  override def openJsonFile(): String = {
-    val json = FileUtils.readFileToString( new File("../data-warehouse/json/nanasama-urls.json") )
+  override def openJsonFile(): String = FileUtils.readFileToString( new File("../data-warehouse/json/nanasama-urls.json") )
 
-    return json
-  }
 }
