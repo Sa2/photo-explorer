@@ -25,7 +25,7 @@ class ImageUrlsService {
   }
 
   def openJsonFile(): String = {
-    FileUtils.readFileToString( new File("../data-warehouse/json/dog-urls.json")
+    FileUtils.readFileToString( new File("../data-warehouse/json/dog-urls.json"))
   }
 
 }
