@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "batch all run"
-ruby lightweight-dog-explorer/search.rb;
-ruby nanasama-explorer/search.rb;
-ruby rabbit-explorer/search.rb;
-ruby shuzo-explorer/search.rb;
+~/.rbenv/shims/ruby -v lightweight-dog-explorer/search.rb;
+~/.rbenv/shims/ruby -v nanasama-explorer/search.rb;
+~/.rbenv/shims/ruby -v rabbit-explorer/search.rb;
+~/.rbenv/shims/ruby -v shuzo-explorer/search.rb;
