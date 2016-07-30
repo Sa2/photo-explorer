@@ -41,7 +41,7 @@ media_url = { mediaUrl: result_list }
 
 pp media_url
 
-output_dir = '../../data-warehouse/json/'
+output_dir = '/tmp/photo-explorer/json/'
 
 json_file = output_dir + 'nanasama-urls.json'
 

@@ -9,6 +9,6 @@ import org.apache.commons.io.FileUtils
   */
 class ShuzoImageUrlsService extends ImageUrlsService {
 
-  override def openJsonFile(): String = FileUtils.readFileToString( new File("../data-warehouse/json/shuzo-urls.json") )
+  override def openJsonFile(): String = FileUtils.readFileToString( new File("/tmp/photo-explorer/json/shuzo-urls.json") )
 
 }

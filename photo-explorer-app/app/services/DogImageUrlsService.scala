@@ -9,6 +9,6 @@ import org.apache.commons.io.FileUtils
   */
 class DogImageUrlsService extends ImageUrlsService {
 
-  override def openJsonFile(): String = FileUtils.readFileToString( new File("../data-warehouse/json/dog-urls.json") )
+  override def openJsonFile(): String = FileUtils.readFileToString( new File("/tmp/photo-explorer/json/dog-urls.json") )
 
 }

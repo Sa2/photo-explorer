@@ -9,7 +9,7 @@ import groovy.json.StringEscapeUtils
 class UrlOutputUtil {
 
     def static outputUrlJson(ArrayList<String> urls, String title) {
-        new File("../../data-warehouse/json/${title}-urls.json").withWriter("UTF-8") { writer ->
+        new File("/tmp/photo-explorer/json/").withWriter("UTF-8") { writer ->
 
             def json = new JsonBuilder()
 

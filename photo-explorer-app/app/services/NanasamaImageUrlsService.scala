@@ -9,6 +9,6 @@ import org.apache.commons.io.FileUtils
   */
 class NanasamaImageUrlsService extends ImageUrlsService {
 
-  override def openJsonFile(): String = FileUtils.readFileToString( new File("../data-warehouse/json/nanasama-urls.json") )
+  override def openJsonFile(): String = FileUtils.readFileToString( new File("/tmp/photo-explorer/json/nanasama-urls.json") )
 
 }
